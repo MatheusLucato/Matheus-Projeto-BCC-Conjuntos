@@ -58,5 +58,5 @@ for i in range(len(matrizFormatada)):
                     c = matrizFormatada[i+1][m],matrizFormatada[i+2][n]
                     d = (','.join(c))
                     resultado.append(d) #adicionando ao vetor
-            print("\nProduto Cartesiano: conjunto 1 {",(','.join(matrizFormatada[i+1])),"}, conjunto 2 {",(','.join(matrizFormatada[i+2])),"}, resultado {",'} , {'.join(resultado),"}\n")
+            print("\nProduto Cartesiano: conjunto 1 {",(','.join(matrizFormatada[i+1])),"}, conjunto 2 {",(','.join(matrizFormatada[i+2] )),"}, resultado {(",') , ('.join(resultado),")}\n")
             resultado.clear()
