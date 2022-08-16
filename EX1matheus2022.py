@@ -11,6 +11,7 @@ texto = file.readlines()  #quebra as linhas do arquivo em um vetor só
 for i in range(len(texto)):  #esse for percorre as posições do vetor 'texto' e cria um vetor de cada linha dentro da "matriz" transformando as linhas em palavras, excluindo o \n
     matriz.append(texto[i].split())
 
+
 for j in range(len(matriz)):
     v  = []
     for m in range(len(matriz[j])): #for's para retirar as ',' das strings
@@ -57,6 +58,7 @@ for i in range(len(matrizFormatada)):
                 for n in range(len(matrizFormatada[i+2])): #for para fazer a junção de a e b
                     c = matrizFormatada[i+1][m],matrizFormatada[i+2][n]
                     d = (','.join(c))
-                    resultado.append(d) #adicionando ao vetor
+                    if d not in resultado:
+                        resultado.append(d) #adicionando ao vetor
             print("\nProduto Cartesiano: conjunto 1 {",(','.join(matrizFormatada[i+1])),"}, conjunto 2 {",(','.join(matrizFormatada[i+2] )),"}, resultado {(",') , ('.join(resultado),")}\n")
             resultado.clear()
