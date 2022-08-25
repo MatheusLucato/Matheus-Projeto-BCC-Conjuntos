@@ -20,9 +20,6 @@ for j in range(len(matriz)):
         v.append(form)
     matrizFormatada.append(v)
 
-for linhas in matrizFormatada: #mostrar de uma forma mais bonita
-    print(linhas)
-
 for i in range(len(matrizFormatada)):
     if matrizFormatada[i][0] in operacoes:
         operacao = matrizFormatada[i][0]
